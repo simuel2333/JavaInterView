@@ -2,7 +2,7 @@
 
 ## JVM模型图
 
-![JVM](.\JVM.png)
+![JVM](JVM.png)
 
 ### 1、程序计数器（Program Counter Register）
 
@@ -16,7 +16,7 @@
 
 设置Java虚拟机栈大小的方式-Xss1m:表示每个线程栈的大小为1m。
 
-![javastack](.\JavaStack.png)
+![javastack](JavaStack.png)
 
 两种异常：
 
@@ -29,7 +29,7 @@
 
 ### 4、Java堆
 
- ![QQ截图20200728105442](D:.\QQ截图20200728105442.png)
+ ![QQ截图20200728105442](QQ截图20200728105442.png)
 
 Java8取消了之前的“永久代”，取而代之的是“元空间”——**Metaspace**，两者本质是一样的。“永久代”使用的是JVM的堆内存，而“元空间”是直接使用的本机物理内存。
 
@@ -86,7 +86,7 @@ MAT和Jprofiler作用：
 
 3.用Jprofiler打开该文件，可以看到哪个对象占用最多的堆内存进行排错。
 
-![oom](.\oom.png)
+![oom](oom.png)
 
 ### 5、方法区
 
